@@ -32,7 +32,7 @@ class Blinky:
         print(self.motor_pwm[self.index], self.on)
         if self.on:
             self.led_pwm.duty_u16(1024)
-            self.keepalive.duty_u16(48000)
+            # self.keepalive.duty_u16(48000)
             self.motor_pwm[self.index].duty_u16(48000)
         else:
             self.led_pwm.duty_u16(0)
